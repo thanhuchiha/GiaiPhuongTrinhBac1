@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txtTieuDe"
+        android:paddingTop="10dp"
+        android:paddingLeft="80dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorAccent"
+        android:text="Giải phương trình bậc 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtSoA"
+        android:layout_below="@+id/txtTieuDe"
+        android:text="Nhập số a : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txtSoB"
+        android:layout_below="@+id/txtSoA"
+        android:text="Nhập số b : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+       android:id="@+id/edtA"
+        android:layout_below="@+id/txtTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtSoA" />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/edtB"
+        android:layout_below="@+id/edtA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtSoB" />
+    <Button
+        android:id="@+id/btnKQ"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorRed"
+        android:text="Kết Qủa"
+        android:layout_below="@+id/txtSoB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
